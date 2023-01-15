@@ -7,7 +7,8 @@ const Main = () => {
         margin:"2%",
         display:"flex",
         justifyContent:"center",
-        gap:"2%"}}>
+        gap:"2%",
+        flexWrap:"wrap"}}>
 
             {/* PRODUCT 1 */}
 
