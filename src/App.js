@@ -8,12 +8,15 @@ import Cart from './components/Cart/Cart';
 
 function App() {
 
+  // states
 const [isOpen,setIsOpen] = useState(false);
+const [cartItems,setCartItems] = useState([]);
 
 
 const toggleCart = () =>{
   setIsOpen(!isOpen)
 }
+
 
   return (
    <>
@@ -29,12 +32,16 @@ const toggleCart = () =>{
    isOpen={isOpen}
    setIsOpen={setIsOpen}   
    toggleCart={toggleCart}
+   cartItems={cartItems}
+   setCartItems={setCartItems}
    />
 
    <Cart 
    isOpen={isOpen}
    setIsOpen={setIsOpen}   
    toggleCart={toggleCart}
+   cartItems={cartItems}
+   setCartItems={setCartItems}
    
    />
 

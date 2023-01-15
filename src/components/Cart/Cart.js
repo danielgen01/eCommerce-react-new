@@ -1,9 +1,11 @@
+import { eventWrapper } from '@testing-library/user-event/dist/utils'
 import React from 'react'
 import './cart.css'
 
 
 const Cart = ({isOpen,setIsOpen,toggleCart}) => {
 
+  
   return (
     <div className='cart-background' 
     style={{display: isOpen? "flex" : "none"}}>

@@ -36,11 +36,13 @@
 }
 
 #cart-close-btn{
-    color: black;
+    color: #ff5b5b;
     font-size: 5rem;
     margin-left: 80%;
 }
 
 #cart-close-btn:hover{
     cursor: pointer;
+    color: #e96262;
+    
 }

@@ -1,7 +1,28 @@
 import React from 'react'
 import './main.css';
 
-const Main = ({isOpen,setIsOpen,toggleCart}) => {
+const Main = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
+
+
+  const handleAddToCart = event =>{
+    const button = event.target;
+    const parentElement = button.parentElement;
+    const productTitle = parentElement.children[0].innerHTML;
+    const productImg = parentElement.children[1].src;
+    const productPrice = parentElement.children[2].innerHTML;
+    const productQuantity = parentElement.children[3].value;
+
+    setCartItems(prevCartItems => [...prevCartItems, {
+      title:productTitle,
+      img:productImg,
+      price:productPrice,
+      quantity:productQuantity
+    }])
+    
+    console.log(cartItems);
+  }
+
+
   return (
     <div className='shopping-products'>
   
@@ -26,7 +47,9 @@ const Main = ({isOpen,setIsOpen,toggleCart}) => {
         
         />
 
-        <button className='addtocart-btn'>
+        <button className='addtocart-btn'
+        onClick={handleAddToCart}
+        >
         <i class='bx bx-cart-add' ></i>
         </button>
 
@@ -51,7 +74,9 @@ const Main = ({isOpen,setIsOpen,toggleCart}) => {
 
         />
 
-        <button className='addtocart-btn'>
+        <button className='addtocart-btn'
+        onClick={handleAddToCart}
+        >
         <i class='bx bx-cart-add' ></i>
         </button>
 
@@ -76,7 +101,9 @@ const Main = ({isOpen,setIsOpen,toggleCart}) => {
         
         />
 
-        <button className='addtocart-btn'>
+        <button className='addtocart-btn'
+        onClick={handleAddToCart}
+        >
         <i class='bx bx-cart-add'></i>
         </button>
 
