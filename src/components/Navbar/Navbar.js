@@ -1,7 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './navbar.css';
 
-const Navbar = () => {
+
+const Navbar = ({isOpen,setIsOpen}) => {
+
+
+  const toggleCart = () =>{
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div className='navbar'>
         <a href='index.html'>
@@ -10,7 +17,10 @@ const Navbar = () => {
         />
         </a>
         <div style={{display:"flex"}}>
-        <i class='bx bx-shopping-bag' id='cart-icon'></i>
+        <i class='bx bx-shopping-bag'
+         id='cart-icon'
+         onClick={toggleCart}
+         ></i>
         <h3 id='items-count'>0</h3>
         </div>
     </div>
