@@ -10,6 +10,11 @@ function App() {
 
 const [isOpen,setIsOpen] = useState(false);
 
+
+const toggleCart = () =>{
+  setIsOpen(!isOpen)
+}
+
   return (
    <>
    <Header />
@@ -17,16 +22,19 @@ const [isOpen,setIsOpen] = useState(false);
    <Navbar
     isOpen={isOpen}
     setIsOpen={setIsOpen}   
+    toggleCart={toggleCart}
    />
 
    <Main
    isOpen={isOpen}
    setIsOpen={setIsOpen}   
+   toggleCart={toggleCart}
    />
 
    <Cart 
    isOpen={isOpen}
    setIsOpen={setIsOpen}   
+   toggleCart={toggleCart}
    
    />
 

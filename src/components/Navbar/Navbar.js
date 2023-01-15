@@ -2,12 +2,9 @@ import React,{useState} from 'react'
 import './navbar.css';
 
 
-const Navbar = ({isOpen,setIsOpen}) => {
+const Navbar = ({isOpen,setIsOpen,toggleCart}) => {
 
 
-  const toggleCart = () =>{
-    setIsOpen(!isOpen)
-  }
 
   return (
     <div className='navbar'>

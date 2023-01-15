@@ -1,7 +1,7 @@
 import React from 'react'
 import './main.css';
 
-const Main = ({isOpen,setIsOpen}) => {
+const Main = ({isOpen,setIsOpen,toggleCart}) => {
   return (
     <div className='shopping-products'>
   
