@@ -10,19 +10,35 @@
 }
 
 .cart-content{
-    position: absolute;
     height: 50%;
     width: 50%;
     background-color: #ffffff;
-    top: 10%;
-    right: 2%;
-    justify-content: space-between;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100%;
+      /* Cart OPEN ANIMATION */
+    animation: slide 1s normal;
+    animation-fill-mode: forwards;
+    border-radius: 5rem;
+  
     
+}
+
+
+
+
+/* CART OPEN ANIMATION */
+
+@keyframes slide {
+  from {margin-left: calc(0% - px)}
+  to {margin-left: 70%;}
 }
 
 #cart-close-btn{
     color: black;
     font-size: 5rem;
+    margin-left: 80%;
 }
 
 #cart-close-btn:hover{
