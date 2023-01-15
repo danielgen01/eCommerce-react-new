@@ -21,11 +21,14 @@ const Main = () => {
         type="number"
         placeholder="1"
         pattern="[1-9]"
-        width="0.5rem"
+        className='input-field'
+        defaultValue="1"
         
         />
 
-        <button className='addtocart-btn'>Add</button>
+        <button className='addtocart-btn'>
+        <i class='bx bx-cart-add' ></i>
+        </button>
 
     </div>
 
@@ -43,11 +46,14 @@ const Main = () => {
         type="number"
         placeholder="1"
         pattern="[1-9]"
-        width="0.5rem"
-     
+        defaultValue="1"
+        className='input-field'
+
         />
 
-        <button className='addtocart-btn'>Add</button>
+        <button className='addtocart-btn'>
+        <i class='bx bx-cart-add' ></i>
+        </button>
 
     </div>
 
@@ -65,11 +71,14 @@ const Main = () => {
         type="number"
         placeholder="1"
         pattern="[1-9]"
-        width="0.5rem"
+        className='input-field'
+        defaultValue="1"
         
         />
 
-        <button className='addtocart-btn'>Add</button>
+        <button className='addtocart-btn'>
+        <i class='bx bx-cart-add'></i>
+        </button>
 
     </div>
     

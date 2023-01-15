@@ -13,8 +13,7 @@
   justify-content:center;
   align-items:center;
   flex-direction:column;
-  max-height:35rem;
-  
+  height:35rem;
 }
 
 .product:hover{
@@ -23,13 +22,31 @@
 
 .addtocart-btn{
     height:2rem;
-    width:5rem;
-    margin-top: 1%;
+    width:15rem;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    border-radius: 5rem;
+}
+
+.addtocart-btn:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.8);
+    color: #ffffff;
+    transition: 500ms;
 }
 
 .product-img{
     max-width:15rem;
     height:10rem;
+}
+
+
+.input-field{
+    width: 3rem;
+    text-align: center;
 }
 
 
