@@ -1,0 +1,39 @@
+/* NAVBAR */
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+/* Logo */
+
+#logo{
+    max-width: 7rem;
+    max-height: auto;
+    margin-left: 2%;
+}
+
+/* Cart */
+
+#cart-icon{
+    font-size: 4rem;
+    margin-right: 2%;
+}
+
+#cart-icon:hover{
+    cursor: pointer;
+}
+
+#items-count{
+    margin-left: -25%;
+    margin-top: -2%;
+    background-color: #ff5b5b;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #ffffff;
+}
