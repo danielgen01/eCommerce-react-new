@@ -39,11 +39,13 @@ const handleRemoveFromCart = index =>{
     const handleMinusButtonClick = item =>{
        item.quantity -=1;
        setCartItems(prevCartItems => [...prevCartItems]);
+       setCartCount(prevCount => prevCount -=1);
     }
 
     const handlePlusButtonClick = item =>{
       item.quantity +=1;
       setCartItems(prevCartItems => [...prevCartItems]);
+      setCartCount(prevCount => prevCount +=1);
    }
 
    
