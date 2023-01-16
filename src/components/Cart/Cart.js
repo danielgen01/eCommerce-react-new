@@ -10,7 +10,9 @@ const Cart = (
   cartItems,
   setCartItems,
   total,
-  setTotal}
+  setTotal,
+  cartCount,
+  setCartCount}
   
   ) => {
 
@@ -29,7 +31,10 @@ useEffect(() => {
 const handleRemoveFromCart = index =>{
     const updatedCart = cartItems.filter((item,i) => i!== index);
     setCartItems(updatedCart);
-}
+
+    setCartCount(prevCount => prevCount -=1);
+
+    }
   
 
 
@@ -95,6 +100,7 @@ const handleRemoveFromCart = index =>{
 
                     <div>
                     <h6>{item.price} €</h6>
+                    {/* <h6>Discount</h6>     IF PRICING RULES TRUE */}
                     <h5>{(item.price * item.quantity).toFixed(2)}€</h5>
                         </div>
                  

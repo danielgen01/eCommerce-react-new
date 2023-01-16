@@ -12,6 +12,7 @@ function App() {
 const [isOpen,setIsOpen] = useState(false);
 const [cartItems,setCartItems] = useState([]);
 const [total,setTotal] = useState(0);
+const [cartCount,setCartCount] = useState(0);
 
 
 const toggleCart = () =>{
@@ -27,6 +28,8 @@ const toggleCart = () =>{
     isOpen={isOpen}
     setIsOpen={setIsOpen}   
     toggleCart={toggleCart}
+    cartCount={cartCount}
+    setCartCount={setCartCount}
    />
 
    <Main
@@ -35,6 +38,8 @@ const toggleCart = () =>{
    toggleCart={toggleCart}
    cartItems={cartItems}
    setCartItems={setCartItems}
+   cartCount={cartCount}
+   setCartCount={setCartCount}
    />
 
    <Cart 
@@ -45,6 +50,8 @@ const toggleCart = () =>{
    setCartItems={setCartItems}
    total={total}
    setTotal={setTotal}
+   cartCount={cartCount}
+   setCartCount={setCartCount}
    
    />
 

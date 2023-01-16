@@ -1,7 +1,16 @@
 import React from 'react'
 import './main.css';
 
-const Main = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
+const Main = (
+  {isOpen,
+  setIsOpen,
+  toggleCart,
+  cartItems,
+  setCartItems,
+  cartCount,
+  setCartCount}
+  
+  ) => {
 
 
   const handleAddToCart = event =>{
@@ -27,7 +36,8 @@ const Main = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
     }])
   }
   
-  }
+  setCartCount(prevCount => prevCount +=1);
+}
 
 
   return (

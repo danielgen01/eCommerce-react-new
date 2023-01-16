@@ -2,7 +2,15 @@ import React,{useState} from 'react'
 import './navbar.css';
 
 
-const Navbar = ({isOpen,setIsOpen,toggleCart}) => {
+const Navbar = (
+  
+  {isOpen,
+  setIsOpen,
+  toggleCart,
+  cartCount,
+  setCartCount}
+
+ ) => {
 
 
 
@@ -18,7 +26,7 @@ const Navbar = ({isOpen,setIsOpen,toggleCart}) => {
          id='cart-icon'
          onClick={toggleCart}
          ></i>
-        <h3 id='items-count'>0</h3>
+        <h3 id='items-count'>{cartCount}</h3>
         </div>
     </div>
   )
