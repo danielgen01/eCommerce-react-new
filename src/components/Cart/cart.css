@@ -32,9 +32,9 @@
     flex-direction: column;
   }
 
-  .added-cart-item-row{
+  .added-cart-items-row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 

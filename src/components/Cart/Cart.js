@@ -22,16 +22,28 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
 
          <div className='cart-content'>
 
-            <div className='added-cart-item-row'>
+            <div className='added-cart-items-column'>
               
               {cartItems.length > 0 && 
               <>
               {cartItems.map((item,title,price,quantity,img)=>(
-                  <div key={title}>
+                      <div key={item} 
+                      style={{display:"flex",
+                      flexDirection:"row",
+                      justifyContent:"space-between",
+                      width:"90%",
+                      alignItems:"center"}}>          
+
+                    <img src={item.img} style={{width:"5rem"}}/>
                     <h4>{item.title}</h4>
-                  </div>
+                    <h5>{item.quantity}</h5>
+                    <h5>{item.price}</h5>
+                 
+                    </div>
+                    
+                  
               ))}
-              
+                 <hr/>
               </>
               }
 
