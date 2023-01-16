@@ -27,8 +27,9 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
               {cartItems.length > 0 && 
               <>
               {cartItems.map((item,title,price,quantity,img)=>(
-
-                      <div key={item} className="added-cart-item-row">          
+                   
+                      <div key={item} className="added-cart-item-row">      
+                      
 
                     <img src={item.img} style={{width:"5rem"}}/>
 
@@ -51,7 +52,7 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
 
                     <div>
                     <h6>{item.price}</h6>
-                    <h5>{item.price * item.quantity}</h5>
+                    <h5>{(item.price * item.quantity).toFixed(2)}</h5>
                         </div>
                  
                     </div>
@@ -68,7 +69,7 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
                   <div className='total-ctn'>
 
               <h3 id='total-price'>Total</h3>
-              <h3>255€</h3>
+              <h3>€</h3>
               </div>
 
             </div>

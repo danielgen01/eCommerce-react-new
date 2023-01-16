@@ -9,8 +9,8 @@ const Main = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
     const parentElement = button.parentElement;
     const productImg = parentElement.children[0].src;
     const productTitle = parentElement.children[1].innerHTML;
-    const productPrice = parentElement.children[2].innerHTML;
-    const productQuantity = parentElement.children[3].value;
+    const productPrice = parseFloat(parentElement.children[2].innerHTML);
+    const productQuantity = parseFloat(parentElement.children[3].value);
 
     setCartItems(prevCartItems => [...prevCartItems, {
       img:productImg,
