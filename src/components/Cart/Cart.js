@@ -59,7 +59,15 @@ useEffect(() => {
                     <h4>{item.title}</h4>
 
                     <div className='input-row'>
-                    <i class='bx bx-trash-alt' id='in-cart-input-trash-icon'></i>
+                      
+                      {item.quantity <=1  &&
+                    <i class='bx bx-trash-alt' id='in-cart-input-trash-icon'></i> }
+                     
+
+                      {item.quantity > 1  &&
+                    <i class='bx bx-minus' id='in-cart-input-minus-icon'></i>  }
+                    
+
                     <input type="number"
                      value={item.quantity}
                      readOnly="true"

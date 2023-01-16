@@ -96,6 +96,17 @@
     color: #0297b7;
   }
 
+  #in-cart-input-minus-icon{
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: rgba(0,0,0,0.5);
+  }
+
+    #in-cart-input-minus-icon:hover{
+       color: #e96262;
+    }
+  
+
   .total-ctn{
     display: flex;
     justify-content: flex-end;
