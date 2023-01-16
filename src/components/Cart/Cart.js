@@ -1,11 +1,33 @@
 import { eventWrapper } from '@testing-library/user-event/dist/utils'
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import './cart.css'
 
 
-const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
-
+const Cart = (
+  {isOpen,
+  setIsOpen,
+  toggleCart,
+  cartItems,
+  setCartItems,
+  total,
+  setTotal}
   
+  ) => {
+
+useEffect(() => {
+  const calculateTotalCost = (cartItems) => {
+    let total = 0;
+    cartItems.forEach(item => {
+      total += item.price * item.quantity
+    });
+    return total;
+  }
+  setTotal(calculateTotalCost(cartItems))
+},[cartItems])
+  
+
+
+
   return (
     <>
     <div className='cart-background' 
@@ -51,8 +73,8 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
                       
 
                     <div>
-                    <h6>{item.price}</h6>
-                    <h5>{(item.price * item.quantity).toFixed(2)}</h5>
+                    <h6>{item.price} €</h6>
+                    <h5>{(item.price * item.quantity).toFixed(2)}€</h5>
                         </div>
                  
                     </div>
@@ -66,12 +88,13 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
             
               
               </div>
+              {cartItems.length > 0 &&
                   <div className='total-ctn'>
 
               <h3 id='total-price'>Total</h3>
-              <h3>€</h3>
+              <h3>{total}€</h3>
               </div>
-
+              }
             </div>
               
         </div>
