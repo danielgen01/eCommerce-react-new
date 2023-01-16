@@ -35,6 +35,18 @@ const handleRemoveFromCart = index =>{
     setCartCount(prevCount => prevCount -=1);
 
     }
+
+    const handleMinusButtonClick = item =>{
+       item.quantity -=1;
+       setCartItems(prevCartItems => [...prevCartItems]);
+    }
+
+    const handlePlusButtonClick = item =>{
+      item.quantity +=1;
+      setCartItems(prevCartItems => [...prevCartItems]);
+   }
+
+   
   
 
 
@@ -83,7 +95,9 @@ const handleRemoveFromCart = index =>{
                      
 
                       {item.quantity > 1  &&
-                    <i class='bx bx-minus' id='in-cart-input-minus-icon'></i>  }
+                    <i class='bx bx-minus' id='in-cart-input-minus-icon'
+                        onClick={() => handleMinusButtonClick(item)}
+                    ></i>  }
                     
 
                     <input type="number"
@@ -92,7 +106,9 @@ const handleRemoveFromCart = index =>{
                      className="cart-input">
                       
                     </input>
-                    <i class='bx bx-plus' id='in-cart-input-plus-icon'></i>
+                    <i class='bx bx-plus' id='in-cart-input-plus-icon'
+                        onClick={() => handlePlusButtonClick(item)}
+                    ></i>
 
                         </div>
                       </div>
