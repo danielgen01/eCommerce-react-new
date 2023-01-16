@@ -10,17 +10,18 @@
 }
 
 .cart-content{
-    height: 50%;
-    width: 50%;
+    height: 98%;
+    width: 20%;
     background-color: #ffffff;
-    margin-top: 5%;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100%;
+    right: -25%;
+    top: 0.5%;
       /* Cart OPEN ANIMATION */
-    animation: slide 1s normal;
+    animation: slide 0.5s normal;
     animation-fill-mode: forwards;
-    border-radius: 5rem;
+    border-radius: 2rem;
   
     
 }
@@ -31,13 +32,13 @@
 /* CART OPEN ANIMATION */
 
 @keyframes slide {
-  from {margin-left: calc(0% - px)}
-  to {margin-left: 70%;}
+  from {right: calc(0% - px)}
+  to {right: 0%;}
 }
 
 #cart-close-btn{
     color: #ff5b5b;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-left: 80%;
 }
 
