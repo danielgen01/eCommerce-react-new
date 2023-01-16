@@ -31,8 +31,10 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
                       <div key={item} className="added-cart-item-row">          
 
                     <img src={item.img} style={{width:"5rem"}}/>
+
                     <div>
                     <h4>{item.title}</h4>
+
                     <div className='input-row'>
                     <i class='bx bx-trash-alt' id='in-cart-input-trash-icon'></i>
                     <input type="number"
@@ -42,7 +44,8 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
                       
                     </input>
                     <i class='bx bx-plus' id='in-cart-input-plus-icon'></i>
-                    </div>
+
+                        </div>
                       </div>
                       
 
@@ -62,11 +65,16 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
             
               
               </div>
+                  <div className='total-ctn'>
+
+              <h3 id='total-price'>Total</h3>
+              <h3>255€</h3>
+              </div>
 
             </div>
-
+              
         </div>
-        
+       
     </div>
   </>)
 }
