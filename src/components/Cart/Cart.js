@@ -24,6 +24,12 @@ useEffect(() => {
   }
   setTotal(calculateTotalCost(cartItems))
 },[cartItems])
+
+
+const handleRemoveFromCart = index =>{
+    const updatedCart = cartItems.filter((item,i) => i!== index);
+    setCartItems(updatedCart);
+}
   
 
 
@@ -48,7 +54,7 @@ useEffect(() => {
               
               {cartItems.length > 0 && 
               <>
-              {cartItems.map((item,title,price,quantity,img)=>(
+              {cartItems.map((item,index)=>(
                    
                       <div key={item} className="added-cart-item-row">      
                       
@@ -61,7 +67,14 @@ useEffect(() => {
                     <div className='input-row'>
                       
                       {item.quantity <=1  &&
-                    <i class='bx bx-trash-alt' id='in-cart-input-trash-icon'></i> }
+
+                                 
+                      <i class='bx bx-trash-alt' id='in-cart-input-trash-icon'
+                      onClick={() => handleRemoveFromCart(index)}>
+                       </i>
+                   
+                      
+                     }
                      
 
                       {item.quantity > 1  &&
@@ -70,7 +83,7 @@ useEffect(() => {
 
                     <input type="number"
                      value={item.quantity}
-                     readOnly="true"
+                     readOnly={true}
                      className="cart-input">
                       
                     </input>
