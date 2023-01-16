@@ -20,7 +20,7 @@ useEffect(() => {
     cartItems.forEach(item => {
       total += item.price * item.quantity
     });
-    return total;
+    return total.toFixed(2);
   }
   setTotal(calculateTotalCost(cartItems))
 },[cartItems])
