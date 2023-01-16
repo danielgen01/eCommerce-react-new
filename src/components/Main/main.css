@@ -20,6 +20,12 @@
     border: 1px solid #000000;
 }
 
+.product:hover .product-img {
+    transform: rotate(-10deg) scale(1.1);
+    transition: 500ms;
+    
+}
+
 .addtocart-btn{
     height:2rem;
     width:15rem;
@@ -47,6 +53,7 @@
 .input-field{
     width: 3rem;
     text-align: center;
+    background-color: none;
 }
 
 
