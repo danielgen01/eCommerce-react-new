@@ -12,14 +12,21 @@ const Main = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
     const productPrice = parseFloat(parentElement.children[2].innerHTML);
     const productQuantity = parseFloat(parentElement.children[3].value);
 
+    const existingItem = cartItems.find(item => item.title === productTitle);
+
+    if(existingItem){
+      existingItem.quantity+= 1 ;
+      setCartItems(prevCartItems => [...prevCartItems]);
+    }else{
+
     setCartItems(prevCartItems => [...prevCartItems, {
       img:productImg,
       title:productTitle,
       price:productPrice,
       quantity:productQuantity
     }])
-    
-    console.log(cartItems);
+  }
+  
   }
 
 

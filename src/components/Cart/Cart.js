@@ -61,7 +61,7 @@ useEffect(() => {
                     <div className='input-row'>
                     <i class='bx bx-trash-alt' id='in-cart-input-trash-icon'></i>
                     <input type="number"
-                     defaultValue={item.quantity}
+                     value={item.quantity}
                      readOnly="true"
                      className="cart-input">
                       
