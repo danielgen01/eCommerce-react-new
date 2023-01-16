@@ -35,6 +35,7 @@
     justify-content: center;
     margin-top: 2%;
     border-radius: 5rem;
+   
 }
 
 .addtocart-btn:hover{
@@ -42,6 +43,10 @@
     background-color: rgba(0,0,0,0.8);
     color: #ffffff;
     transition: 500ms;
+}
+
+.icon-wrapper{
+    pointer-events: none;
 }
 
 .product-img{

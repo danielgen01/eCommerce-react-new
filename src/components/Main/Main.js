@@ -68,7 +68,9 @@ const Main = (
         <button className='addtocart-btn'
         onClick={handleAddToCart}
         >
-        <i class='bx bx-cart-add' ></i>
+         <i class='bx bx-cart-add'
+         style={{pointerEvents:"none"}}
+         ></i>
         </button>
 
     </div>
@@ -96,7 +98,9 @@ const Main = (
         <button className='addtocart-btn'
         onClick={handleAddToCart}
         >
-        <i class='bx bx-cart-add' ></i>
+         <i class='bx bx-cart-add'
+         style={{pointerEvents:"none"}}
+         ></i>
         </button>
 
     </div>
@@ -123,7 +127,9 @@ const Main = (
         <button className='addtocart-btn'
         onClick={handleAddToCart}
         >
-        <i class='bx bx-cart-add'></i>
+         <i class='bx bx-cart-add'
+         style={{pointerEvents:"none"}}
+         ></i>
         </button>
 
     </div>
