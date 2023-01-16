@@ -7,14 +7,14 @@ const Main = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
   const handleAddToCart = event =>{
     const button = event.target;
     const parentElement = button.parentElement;
-    const productTitle = parentElement.children[0].innerHTML;
-    const productImg = parentElement.children[1].src;
+    const productImg = parentElement.children[0].src;
+    const productTitle = parentElement.children[1].innerHTML;
     const productPrice = parentElement.children[2].innerHTML;
     const productQuantity = parentElement.children[3].value;
 
     setCartItems(prevCartItems => [...prevCartItems, {
-      title:productTitle,
       img:productImg,
+      title:productTitle,
       price:productPrice,
       quantity:productQuantity
     }])
