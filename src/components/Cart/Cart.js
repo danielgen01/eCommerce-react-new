@@ -22,22 +22,34 @@ const Cart = ({isOpen,setIsOpen,toggleCart,cartItems,setCartItems}) => {
 
          <div className='cart-content'>
 
-            <div className='added-cart-items-column'>
+            <div className='cart-items-column'>
               
               {cartItems.length > 0 && 
               <>
               {cartItems.map((item,title,price,quantity,img)=>(
-                      <div key={item} 
-                      style={{display:"flex",
-                      flexDirection:"row",
-                      justifyContent:"space-between",
-                      width:"90%",
-                      alignItems:"center"}}>          
+
+                      <div key={item} className="added-cart-item-row">          
 
                     <img src={item.img} style={{width:"5rem"}}/>
+                    <div>
                     <h4>{item.title}</h4>
-                    <h5>{item.quantity}</h5>
-                    <h5>{item.price}</h5>
+                    <div className='input-row'>
+                    <i class='bx bx-trash-alt' id='in-cart-input-trash-icon'></i>
+                    <input type="number"
+                     defaultValue={item.quantity}
+                     readOnly="true"
+                     className="cart-input">
+                      
+                    </input>
+                    <i class='bx bx-plus' id='in-cart-input-plus-icon'></i>
+                    </div>
+                      </div>
+                      
+
+                    <div>
+                    <h6>{item.price}</h6>
+                    <h5>{item.price * item.quantity}</h5>
+                        </div>
                  
                     </div>
                     
