@@ -18,7 +18,9 @@
 
 .product:hover{
     border: 1px solid #000000;
+    
 }
+
 
 .product:hover .product-img {
     transform: rotate(-10deg) scale(1.1);
@@ -62,6 +64,7 @@
     font-size: 1.2rem;
     text-align: center;
     background-color: none;
+    
 }
 
 
@@ -94,9 +97,7 @@
         margin-top: 10%;
     }
 
-    .product{
-
-    }
+   
 
 }
 

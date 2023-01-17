@@ -65,6 +65,8 @@ const Main = (
         pattern="[1-9]"
         className='input-field'
         defaultValue="1"
+        min="1"
+        max="9"
         
         
         />
@@ -97,6 +99,8 @@ const Main = (
         pattern="[1-9]"
         defaultValue="1"
         className='input-field'
+        min="1"
+        max="9"
 
         />
 
@@ -126,6 +130,11 @@ const Main = (
         pattern="[1-9]"
         className='input-field'
         defaultValue="1"
+        min="1"
+        max="9"
+       
+        
+        
         
         />
 
