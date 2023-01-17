@@ -15,6 +15,7 @@ const Cart = (
   setCartCount}
   
   ) => {
+// calculate/update total price
 
 useEffect(() => {
   const calculateTotalCost = (cartItems) => {
@@ -29,6 +30,7 @@ useEffect(() => {
   setTotal(calculateTotalCost(cartItems))
 },[cartItems])
 
+//handle opened cart buttons 
 
 const handleRemoveFromCart = index =>{
     const updatedCart = cartItems.filter((item,i) => i!== index);
@@ -71,6 +73,8 @@ const handleRemoveFromCart = index =>{
          <div className='cart-content'>
 
             <div className='cart-items-column'>
+
+              {/* Rendering cart content  */}
               
               {cartItems.length > 0 && 
               <>

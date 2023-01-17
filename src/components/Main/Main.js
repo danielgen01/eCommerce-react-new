@@ -23,6 +23,8 @@ const Main = (
 
     const existingItem = cartItems.find(item => item.title === productTitle);
 
+    // Checks if clicked item already in cart and react to it 
+
     if(existingItem){
       existingItem.quantity+= 1 * productQuantity;
       setCartItems(prevCartItems => [...prevCartItems]);
@@ -42,6 +44,7 @@ const Main = (
 
 
   return (
+    // Main content webpage items
     <div className='shopping-products'>
   
 
