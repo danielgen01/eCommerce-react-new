@@ -25,28 +25,24 @@ const Main = (
 
     // Checks if clicked item already in cart and react to it 
 
-    if(productQuantity < 1){
-      return
-      
-    }else{
-
     if(existingItem){
       existingItem.quantity+= 1 * productQuantity;
       setCartItems(prevCartItems => [...prevCartItems]);
     }else{
+
     setCartItems(prevCartItems => [...prevCartItems, {
       img:productImg,
       title:productTitle,
       price:productPrice,
       quantity:productQuantity
     }])
-  
+  }
   
   setCartCount(prevCount => prevCount +=1 * productQuantity);
   
 }
-  }
-  }
+
+
   return (
     // Main content webpage items
     <div className='shopping-products'>
