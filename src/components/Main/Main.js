@@ -24,7 +24,7 @@ const Main = (
     const existingItem = cartItems.find(item => item.title === productTitle);
 
     if(existingItem){
-      existingItem.quantity+= 1 ;
+      existingItem.quantity+= 1 * productQuantity;
       setCartItems(prevCartItems => [...prevCartItems]);
     }else{
 
@@ -36,7 +36,7 @@ const Main = (
     }])
   }
   
-  setCartCount(prevCount => prevCount +=1);
+  setCartCount(prevCount => prevCount +=1 * productQuantity);
 }
 
 
