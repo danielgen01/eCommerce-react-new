@@ -207,5 +207,39 @@ body{
 
 
 
+ .cart-background{
+    height: 220%;
+   }
+
+   .cart-container{
+     height: 40%;
+     width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    right: 0% !important;
+    top: -50%;
+      /* Cart OPEN ANIMATION */
+    animation:slide 0.5s normal;
+    animation-fill-mode: forwards;
+    border-radius: 2rem;
+    
+   }
+
+   /* CART OPEN ANIMATION */
+
+@keyframes slide {
+  from {top: calc(0% - px)}
+  to {top: 0.5%;}
+}
+
+   .cart-input{
+    width: 100%;
+   }
+
+
+
+
 }
 
