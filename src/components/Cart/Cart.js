@@ -145,7 +145,7 @@ const handleRemoveFromCart = index =>{
                         {/* Second Rule Fruit Tea */}
                         {item.title === 'Fruit Tea' && item.quantity >=1 &&
                         <>
-                        <h5 id='fruit-tea-discount'>100% off</h5>
+                        <h5 id='fruit-tea-discount'>50% off</h5>
                         <h5>{item.price = 1.55}€/piece</h5>
                         </>
                         }
