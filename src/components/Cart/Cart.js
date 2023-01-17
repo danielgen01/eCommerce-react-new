@@ -24,6 +24,7 @@ useEffect(() => {
     });
     return total.toFixed(2);
   }
+  
   setTotal(calculateTotalCost(cartItems))
 },[cartItems])
 
