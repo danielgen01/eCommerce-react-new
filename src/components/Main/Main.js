@@ -37,6 +37,7 @@ const Main = (
   }
   
   setCartCount(prevCount => prevCount +=1 * productQuantity);
+  
 }
 
 
@@ -72,6 +73,7 @@ const Main = (
          style={{pointerEvents:"none"}}
          ></i>
         </button>
+
 
     </div>
 
