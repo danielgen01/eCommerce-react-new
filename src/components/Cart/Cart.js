@@ -122,7 +122,7 @@ const handleRemoveFromCart = index =>{
                       
                       
                     <div>
-                    <h6>{item.price} €</h6> {/* Single Item price (per piece)*/ }
+                   
 
                     {/* PRICING RULES  */}
 
@@ -149,6 +149,11 @@ const handleRemoveFromCart = index =>{
                         <h5>{item.price = 1.55}€/piece</h5>
                         </>
                         }
+
+                        {item.title === 'Coffee' &&
+                        <>
+                        <h5>{item.price}</h5>
+                        </>}
 
                         
 
