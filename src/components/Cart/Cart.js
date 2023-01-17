@@ -25,6 +25,7 @@ useEffect(() => {
     return total.toFixed(2);
   }
   
+    if(cartItems.includes)
   setTotal(calculateTotalCost(cartItems))
 },[cartItems])
 
@@ -32,7 +33,6 @@ useEffect(() => {
 const handleRemoveFromCart = index =>{
     const updatedCart = cartItems.filter((item,i) => i!== index);
     setCartItems(updatedCart);
-
     setCartCount(prevCount => prevCount -=1);
 
     }
@@ -116,11 +116,28 @@ const handleRemoveFromCart = index =>{
                         </div>
                       </div>
                       
-
+                      
                     <div>
-                    <h6>{item.price} €</h6>
-                    {/* <h6>Discount</h6>     IF PRICING RULES TRUE */}
-                    <h5>{(item.price * item.quantity).toFixed(2)}€</h5>
+                    <h6>{item.price} €</h6> {/* Single Item price (per piece)*/ }
+
+                    {/* PRICING RULES  */}
+
+                    {item.title === 'Strawberries' && item.quantity >=3 &&
+                    <>
+                    <h5 id='strawberry-discount'>10% off</h5> 
+                    <h5>{item.price = 4.50}€/piece</h5>
+                      
+                      </>
+                    }
+
+                    {item.title === 'Strawberries' && item.quantity < 3 &&
+                   <>
+                    <h5>{item.price = 5.00}€/piece</h5>
+                     </>
+                        }
+                     
+
+                    <h5>{(item.price * item.quantity).toFixed(2)}€</h5> {/* Multi Item price (quantity * single price)*/ }
                         </div>
                  
                     </div>
