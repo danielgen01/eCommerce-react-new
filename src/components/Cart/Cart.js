@@ -75,6 +75,19 @@ const handleRemoveFromCart = index =>{
             <div className='cart-items-column'>
 
               {/* Rendering cart content  */}
+
+              <h1 style={{textAlign:"center"}}>{cartCount} items | {total} €</h1>
+
+              {cartItems.length <= 0 &&
+              <>
+              <div className='empty-cart-content'>
+              <i class='bx bx-cart' id='empty-cart-icon'></i>
+              <h2>No items in cart</h2>
+              <button className='continue-shopping-btn' 
+                onClick={toggleCart}
+              >CONTINUE SHOPPING</button>
+              </div>
+              </>}
               
               {cartItems.length > 0 && 
               <>
