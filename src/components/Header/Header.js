@@ -5,7 +5,7 @@ const Header = () => {
     const [headline,setHeadline] = useState('++ ONLY TODAY SPECIAL OFFERS ! ++');
 
     const headlines = ['++ STRAWBERRIES | BUY 3 - GET 10% OFF ++',
-     '++ FRUIT TEA | BUY ONE GET ONE FREE ++',
+     '++ FRUIT TEA | 50% OFF ++',
     '++ ONLY TODAY SPECIAL OFFERS ! ++'];
 
     useEffect(()=> {

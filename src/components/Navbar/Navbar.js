@@ -15,9 +15,10 @@ const Navbar = (
 
 
   return (
+    <>
     <div className='navbar'>
         <a href='index.html'>
-        <img src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fruit-logo-design-template-80e6d069757f94e82d8f8003edd6238b_screen.jpg?ts=1614334276'
+        <img src='https://thumbs.dreamstime.com/z/blue-pattern-background-d-animation-179992402.jpg'
             id='logo'
         />
         </a>
@@ -28,8 +29,10 @@ const Navbar = (
          ></i>
         <h3 id='items-count'>{cartCount}</h3>
         </div>
+        
     </div>
-  )
+    <hr></hr>
+  </>)
 }
 
 export default Navbar

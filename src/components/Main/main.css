@@ -37,6 +37,11 @@
     justify-content: center;
     margin-top: 2%;
     border-radius: 5rem;
+    background-color: grey;
+    color: #ffffff;
+    border: none;
+    margin-top: 5%;
+    text-shadow: 1px 1px 1px #000000;
    
 }
 

@@ -26,7 +26,7 @@ useEffect(() => {
     return total.toFixed(2);
   }
   
-    if(cartItems.includes)
+   
   setTotal(calculateTotalCost(cartItems))
 },[cartItems])
 
@@ -130,6 +130,7 @@ const handleRemoveFromCart = index =>{
 
                     {item.title === 'Strawberries' && item.quantity >=3 &&
                     <>
+                    <s>5.00€</s>
                     <h5 id='strawberry-discount'>10% off</h5> 
                     <h5>{item.price = 4.50}€</h5>
                       
@@ -145,6 +146,7 @@ const handleRemoveFromCart = index =>{
                         {/* Second Rule Fruit Tea */}
                         {item.title === 'Fruit Tea' && item.quantity >=1 &&
                         <>
+                         <s>3.11€</s>
                         <h5 id='fruit-tea-discount'>50% off</h5>
                         <h5>{item.price = 1.55}€</h5>
                         </>
