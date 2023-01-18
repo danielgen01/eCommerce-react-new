@@ -21,6 +21,10 @@ const Main = (
     const productPrice = parseFloat(parentElement.children[2].innerHTML);
     const productQuantity = parseFloat(parentElement.children[3].value);
 
+    if(productQuantity <1){
+      return
+    }else {
+
     const existingItem = cartItems.find(item => item.title === productTitle);
 
     // Checks if clicked item already in cart and react to it 
@@ -42,7 +46,7 @@ const Main = (
   
 }
 
-
+  }
   return (
     // Main content webpage items
     <div className='shopping-products'>
