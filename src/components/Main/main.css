@@ -72,39 +72,6 @@
     
 }
 
-.added-to-cart-background{
-    background-color: rgba(0,0,0,0.8);
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    z-index: 50000;
-    position: absolute;
-}
-
-.added-to-cart-ctn{
-    top: 10%;
-    left: 30%;
-    width: 50rem;
-    height: 50rem;
-    z-index: 500000;
-    position: absolute;
-    background-color: rgba(0,0,0,0.9);
-    color: #ffffff;
-    
-}
-
-.added-to-cart-ctn h5{
-    text-align: center;
-    font-size: 3rem;
-}
-
-#close-item-added-preview-icon{
-    font-size: 4rem;
-    margin-left:90% ;
-    cursor: pointer;
-}
-
-
 
 
 /* Media Queries */
