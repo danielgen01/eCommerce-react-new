@@ -13,10 +13,15 @@ const [isOpen,setIsOpen] = useState(false);
 const [cartItems,setCartItems] = useState([]);
 const [total,setTotal] = useState(0);
 const [cartCount,setCartCount] = useState(0);
+const [isAdded,setIsAdded] = useState(false);
 
 
 const toggleCart = () =>{
   setIsOpen(!isOpen)
+}
+
+const toggleAddedItemCtn = () => {
+  setIsAdded(!isAdded)
 }
 
 
@@ -40,6 +45,9 @@ const toggleCart = () =>{
    setCartItems={setCartItems}
    cartCount={cartCount}
    setCartCount={setCartCount}
+   toggleAddedItemCtn={toggleAddedItemCtn}
+   isAdded={isAdded}
+   setIsAdded={setIsAdded}
    />
 
    <Cart 
@@ -52,6 +60,8 @@ const toggleCart = () =>{
    setTotal={setTotal}
    cartCount={cartCount}
    setCartCount={setCartCount}
+   isAdded={isAdded}
+   setIsAdded={setIsAdded}
    
    />
 

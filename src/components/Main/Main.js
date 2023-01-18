@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './main.css';
 
 const Main = (
+  
   {isOpen,
   setIsOpen,
   toggleCart,
   cartItems,
   setCartItems,
   cartCount,
-  setCartCount}
+  setCartCount,
+  isAdded,
+  setIsAdded,
+  toggleAddedItemCtn}
   
   ) => {
 
@@ -43,12 +47,40 @@ const Main = (
   }
   
   setCartCount(prevCount => prevCount +=1 * productQuantity);
+  setIsAdded(true);
   
 }
 
+
+
   }
   return (
-    // Main content webpage items
+    <>
+    {/* Popup when user adds item to cart */}
+    <div className='added-to-cart-background' style={{display: isAdded? "flex" : "none"}}>
+    <div className='added-to-cart-ctn' style={{display: isAdded? "flex" : "none",flexDirection:"column",alignItems:"center"}}>
+    <i class='bx bx-window-close' 
+    id='close-item-added-preview-icon'
+    onClick= {toggleAddedItemCtn}
+    ></i>
+    <h5><i class='bx bxs-check-circle' id='check-circle'></i>Added to your cart</h5>
+      
+      {cartItems.map((itemPreviv) => (
+
+        <div key={itemPreviv} style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+          <h2>{itemPreviv.title}</h2>
+            <img src={itemPreviv.img} style={{width:"15rem"}} />
+            <h2>Quantity: {itemPreviv.quantity}</h2>
+            <h2>Price: {itemPreviv.price} € / item</h2>
+            </div>
+          
+          
+      ))}     
+      </div> 
+      </div>
+    
+    
+    {/* Main content webpage items */}
     <div className='shopping-products'>
   
 
@@ -153,7 +185,7 @@ const Main = (
     </div>
     
     </div>
-  )
+  </>)
 }
 
 export default Main

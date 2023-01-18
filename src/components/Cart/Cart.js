@@ -12,7 +12,9 @@ const Cart = (
   total,
   setTotal,
   cartCount,
-  setCartCount}
+  setCartCount,
+   isAdded,
+   setIsAdded}
   
   ) => {
 // calculate/update total price
