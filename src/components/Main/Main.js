@@ -56,12 +56,12 @@ const Main = (
 
     <div className='product col-s-3 col-3'>
         
-        <img src='https://h2omart.com.au/wp-content/uploads/2021/08/fruit-tea-freeze.png' 
+        <img src='https://i.otto.de/i/otto/121801b0-17a9-5ba4-afd5-98087775d6c2/adidas-sportswear-sporthose-essentials-fleece-logo-hose-black-white.jpg?$formatz$' 
         className="product-img"
         
         />
-        <h2>Fruit Tea</h2>
-        <h3>3.11€</h3>
+        <h2>Adidas Jogger</h2>
+        <h3>29.99€</h3>
 
         <input 
         type="number"
@@ -90,22 +90,23 @@ const Main = (
 
     <div className='product col-s-3 col-3'>
         
-        <img src='https://gwpriceltd.co.uk/wp-content/uploads/2020/04/strawberries-min.jpg' 
-       className='product-img'
+        <img src='https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/36ed7aebf87e475aba21add7006c7c89_9366/Condivo_22_Hose_Schwarz_HA3694_21_model.jpg' 
+        className="product-img"
+        
         />
-        <h2>Strawberries</h2>
-
-        <h3>5.00€</h3>
+        <h2>Adidas Jogger classic </h2>
+        <h3>29.99€</h3>
 
         <input 
         type="number"
         placeholder="1"
         pattern="[1-9]"
-        defaultValue="1"
         className='input-field'
+        defaultValue="1"
         min="1"
         max="9"
-
+        
+        
         />
 
         <button className='addtocart-btn'
@@ -115,18 +116,20 @@ const Main = (
          style={{pointerEvents:"none"}}
          ></i>
         </button>
+
 
     </div>
 
     {/* PRODUCT 3 */}
 
     <div className='product col-s-3 col-3'>
-     
-        <img src='https://m.media-amazon.com/images/I/41Qfhit6s3L._AC_.jpg' 
-        className='product-img'
+        
+        <img src='https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/557ce1f14da44b268adbadbe00d06f9c_9366/Entrada_22_Trainingshose_Schwarz_HC0332_21_model.jpg' 
+        className="product-img"
+        
         />
-        <h2>Coffee</h2>
-        <h3>11.23€</h3>
+        <h2>Adidas Jogger</h2>
+        <h3>29.99€</h3>
 
         <input 
         type="number"
@@ -136,8 +139,6 @@ const Main = (
         defaultValue="1"
         min="1"
         max="9"
-       
-        
         
         
         />
@@ -149,6 +150,109 @@ const Main = (
          style={{pointerEvents:"none"}}
          ></i>
         </button>
+
+
+    </div>
+
+       {/* PRODUCT 4 */}
+
+       <div className='product col-s-3 col-3'>
+        
+        <img src='https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2147438006aa42eba34bae8401209c32_9366/Essentials_Camo_Print_French_Terry_Hoodie_Schwarz_HL6933_21_model.jpg' 
+        className="product-img"
+        
+        />
+        <h2>Adidas Hoodie black</h2>
+        <h3>59.99€</h3>
+
+        <input 
+        type="number"
+        placeholder="1"
+        pattern="[1-9]"
+        className='input-field'
+        defaultValue="1"
+        min="1"
+        max="9"
+        
+        
+        />
+
+        <button className='addtocart-btn'
+        onClick={handleAddToCart}
+        >
+         <i className={`bx bx-cart-add cart-add-icon`}
+         style={{pointerEvents:"none"}}
+         ></i>
+        </button>
+
+
+    </div>
+
+       {/* PRODUCT 5 */}
+
+       <div className='product col-s-3 col-3'>
+        
+        <img src='https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/63cb7b51fac146c28306aefb011cccf7_9366/adicolor_Classics_3-Streifen_Hoodie_Blau_IA6348_21_model.jpg' 
+        className="product-img"
+        
+        />
+        <h2>Adidas Hoodie blue</h2>
+        <h3>59.99€</h3>
+
+        <input 
+        type="number"
+        placeholder="1"
+        pattern="[1-9]"
+        className='input-field'
+        defaultValue="1"
+        min="1"
+        max="9"
+        
+        
+        />
+
+        <button className='addtocart-btn'
+        onClick={handleAddToCart}
+        >
+         <i className={`bx bx-cart-add cart-add-icon`}
+         style={{pointerEvents:"none"}}
+         ></i>
+        </button>
+
+
+    </div>
+
+       {/* PRODUCT 6 */}
+
+       <div className='product col-s-3 col-3'>
+        
+        <img src='https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/42558fffae324a73afc3ae9800aff124_9366/Essentials_Camo_Print_French_Terry_Hoodie_Weiss_HL6932_21_model.jpg' 
+        className="product-img"
+        
+        />
+        <h2>Adidas Hoodie white</h2>
+        <h3>59.99€</h3>
+
+        <input 
+        type="number"
+        placeholder="1"
+        pattern="[1-9]"
+        className='input-field'
+        defaultValue="1"
+        min="1"
+        max="9"
+        
+        
+        />
+
+        <button className='addtocart-btn'
+        onClick={handleAddToCart}
+        >
+         <i className={`bx bx-cart-add cart-add-icon`}
+         style={{pointerEvents:"none"}}
+         ></i>
+        </button>
+
 
     </div>
     

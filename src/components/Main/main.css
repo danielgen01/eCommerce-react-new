@@ -23,7 +23,7 @@
 
 
 .product:hover .product-img {
-    transform: rotate(-10deg) scale(1.1);
+    transform:  scale(1.76);
     transition: 500ms;
     
 }

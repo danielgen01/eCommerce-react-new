@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './header.css'
 
 const Header = () => {
-    const [headline,setHeadline] = useState('++ ONLY TODAY SPECIAL OFFERS ! ++');
+    const [headline,setHeadline] = useState('++ Order today - get your order tomorrow ++');
 
-    const headlines = ['++ STRAWBERRIES | BUY 3 - GET 10% OFF ++',
-     '++ FRUIT TEA | 50% OFF ++',
-    '++ ONLY TODAY SPECIAL OFFERS ! ++'];
+    const headlines = ['++ Order today - get your order tomorrow ++',
+     '++ FREE SHIPPING ++',
+    '++ NEW CLOTHES ++'];
 
     useEffect(()=> {
     let timeoutId;

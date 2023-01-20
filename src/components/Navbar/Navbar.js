@@ -18,7 +18,7 @@ const Navbar = (
     <>
     <div className='navbar'>
         <a href='index.html'>
-        <img src='https://thumbs.dreamstime.com/z/blue-pattern-background-d-animation-179992402.jpg'
+        <img src='https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg'
             id='logo'
         />
         </a>
