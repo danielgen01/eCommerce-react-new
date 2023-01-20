@@ -128,7 +128,7 @@ const Main = (
         className="product-img"
         
         />
-        <h2>Adidas Jogger</h2>
+        <h2>Adidas Jogger fit</h2>
         <h3>29.99€</h3>
 
         <input 
