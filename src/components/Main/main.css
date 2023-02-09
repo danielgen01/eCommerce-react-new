@@ -16,28 +16,25 @@
   height:35rem;
 }
 
-.product:hover{
-    border: 1px solid #000000;
-    
-}
+
 
 
 .product:hover .product-img {
-    transform:  scale(1.76);
+    transform:  scale(2.0);
     transition: 500ms;
     
 }
 
 .addtocart-btn{
     height:2rem;
-    width:15rem;
+    width:5rem;
     font-size: 1.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2%;
-    border-radius: 5rem;
-    background-color: grey;
+    border-radius: .3rem;
+    background-color: #088413;
     color: #ffffff;
     border: none;
     margin-top: 5%;
@@ -47,7 +44,7 @@
 
 .addtocart-btn:hover{
     cursor: pointer;
-    background-color: rgba(0,0,0,0.7);
+    box-shadow: 3px 3px 3px lightblue;;
     color: #ffffff;
     transition: 500ms;
 }
