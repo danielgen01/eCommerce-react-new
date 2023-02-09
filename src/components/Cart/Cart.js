@@ -135,42 +135,6 @@ const handleRemoveFromCart = index =>{
                       
                       
                     <div>
-                   
-
-                    {/* PRICING RULES  */}
-
-                    {/* First Rule Strawberries */}
-
-                    {item.title === 'Strawberries' && item.quantity >=3 &&
-                    <>
-                    <s>5.00€</s>
-                    <h5 id='strawberry-discount'>10% off</h5> 
-                    <h5>{item.price = 4.50}€</h5>
-                      
-                      </>
-                    }
-
-                    {item.title === 'Strawberries' && item.quantity < 3 &&
-                   <>
-                    <h5>{item.price = 5.00}€</h5>
-                     </>
-                        }
-
-                        {/* Second Rule Fruit Tea */}
-                        {item.title === 'Fruit Tea' && item.quantity >=1 &&
-                        <>
-                         <s>3.11€</s>
-                        <h5 id='fruit-tea-discount'>50% off</h5>
-                        <h5>{item.price = 1.55}€</h5>
-                        </>
-                        }
-
-                        {item.title === 'Coffee' &&
-                        <>
-                        <h5>{item.price}€</h5>
-                        </>}
-
-                        
 
                     <h5>{(item.price * item.quantity).toFixed(2)}€</h5> {/* Multi Item price (quantity * single price)*/ }
                         </div>
